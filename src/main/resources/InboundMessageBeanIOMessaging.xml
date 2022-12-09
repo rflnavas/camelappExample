@@ -1,0 +1,18 @@
+<beanio xmlns="http://www.beanio.org/2012/03"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.beanio.org/2012/03 http://www.beanio.org/2012/03/mapping.xsd">
+
+  <stream name="inputMessageStream" format="csv">
+    <!-- record layout... -->
+    <record name="inboundEmployeeSalary" class="com.rnrcompany.cameltutorial.beans.EmployeeSalary">
+        <field name="department" minOccurs="1"/>
+        <field name="departmentName" minOccurs="1"/>
+        <field name="division" minOccurs="1"/>
+        <field name="gender" minOccurs="1"/>
+        <field name="salary" minOccurs="1"/>
+        <field name="overtimePay" minOccurs="1"/>
+        <field name="longetivityPay" minOccurs="1"/>
+        <field name="grade" minOccurs="1"/>
+    </record>
+  </stream>
+</beanio>
